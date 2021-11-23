@@ -13,10 +13,10 @@ dp=Dispatcher(bot)
 # Where USD is the base currency you want to use
 @dp.message_handler(commands='start')
 async def sendwelcome(message: types.Message):
-    await message.answer('Assalomu aleykum men sizning uchinchi raqamli botingizman')
+    await message.answer('Assalomu aleykum men Jasurbekning uchinchi raqamli botiman')
 @dp.message_handler(commands='yordam')
 async def yordam(message:types.Message):
-    await message.answer('Kursni bilish uchun /kurs ni ustiga bosingYordam olish uchun @jtursunboev ga murojaat qiling')
+    await message.answer('Valyuta kursni bilish uchun /kurs ni ustiga bosing. Yordam olish uchun @jtursunboev ga murojaat qiling')
 # Making our request
 @dp.message_handler(commands='kurs')
 async def kursimiz(message: types.Message):
